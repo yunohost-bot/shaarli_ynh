@@ -73,6 +73,10 @@
     "api": {
         "enabled": true,
         "secret": "__SECRET__"
+    },
+        "ldap": {
+        "host": "ldap://localhost",
+        "dn": "uid=%s,ou=users,dc=yunohost,dc=org"
     }
 }
 */ ?>
