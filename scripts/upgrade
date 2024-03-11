@@ -31,7 +31,7 @@ then
 	#cp -a "$install_dir/tpl" "$tmpdir/tpl"
 
 	# Download, check integrity, uncompress and patch the source from app.src
-	ynh_setup_source --dest_dir="$install_dir" --keep="data tpl"
+	ynh_setup_source --dest_dir="$install_dir" --full_replace=1 --keep="data tpl"
 
 	#cp -a "$tmpdir/data" "$install_dir/"
 	#cp -a -n "$tmpdir/tpl" "$install_dir/" # copy without erasing existing templates (from official source)
